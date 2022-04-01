@@ -1,0 +1,45 @@
+{
+  "categories": [
+
+    {
+      "id": "0ee8b832-0545-4d41-bafb-184d70a3c77f",
+      "CategoryName": "Music"
+    },
+    {
+      "id": "e4c5f46a-6312-403f-82ae-cba5c7d39163",
+      "CategoryName": "Garden"
+    },
+    {
+      "id": "08b37561-6674-4452-8b48-0c4d4455520e",
+      "CategoryName": "Health"
+    },
+    {
+      "id": "bc32efc1-2982-4bc9-998c-0f5bcfb27759",
+      "CategoryName": "Electronics"
+    },
+    {
+      "id": "d4e6157d-ae5d-4bde-99d6-7e4e5a204e56",
+      "CategoryName": "Jewelry"
+    },
+    {
+      "id": "767dbb2c-7565-4dde-adcb-4ece9e7eec13",
+      "CategoryName": "Computers"
+    },
+    {
+      "id": "a330b72c-fad3-4f17-a927-3215b4638afd",
+      "CategoryName": "Grocery"
+    },
+    {
+      "id": "f2bf8ad9-a284-465f-87bf-23ba5cfc87d6",
+      "CategoryName": "Automotive"
+    },
+    {
+      "id": "9534f888-816a-45ee-aa34-8eca5d3e4c43",
+      "CategoryName": "Movies"
+    },
+    {
+      "id": "dc30ad3f-2d57-462a-b756-2d15d6dac2a7",
+      "CategoryName": "Clothing"
+    }
+  ]
+}
