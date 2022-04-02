@@ -14,8 +14,7 @@ namespace AssesmentAPI.Data.Domain
         public decimal Weight { get; set; }
         public string Status { get; set; }
         public Guid CategoryId { get; set; }
+
         public virtual Category Category { get; set; }
     }
 }
-
-

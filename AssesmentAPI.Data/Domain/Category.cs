@@ -15,7 +15,6 @@ namespace AssesmentAPI.Data.Domain
         }
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-
         public Guid Id { get; set; }
         public string CategoryName { get; set; }
 

@@ -11,9 +11,9 @@ namespace AssesmentAPI.Data.Domain
   
     public class EfRepository<T> : IAsyncRepository<T> where T : class
     {
-        protected readonly InventoryDbContext _dbContext;
+        protected readonly InventoryDBContext _dbContext;
 
-        public EfRepository(InventoryDbContext dbContext)  
+        public EfRepository(InventoryDBContext dbContext)  
         {
             _dbContext = dbContext;
         }

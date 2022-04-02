@@ -14,7 +14,7 @@ namespace UnitTest
 {
     public class InventoryTest
     {
-        private readonly DbContextOptions<InventoryDbContext> _options;
+        private readonly DbContextOptions<InventoryDBContext> _options;
         public InventoryTest()
         {
             _options = RespositoryHelperTest.DbContextOptionsLocalDb();
@@ -27,7 +27,7 @@ namespace UnitTest
         {
             //Arrange
             //Initialize context
-            using InventoryDbContext context = new InventoryDbContext(_options);
+            using InventoryDBContext context = new InventoryDBContext(_options);
             //Intialize generic repo
             var productTestRepo = new EfRepository<Product>(context);
 
@@ -50,7 +50,7 @@ namespace UnitTest
         {
             //Arrange
             //Initialize context
-            using InventoryDbContext context = new InventoryDbContext(_options);
+            using InventoryDBContext context = new InventoryDBContext(_options);
             //Intialize generic repo
             var productTestRepo = new EfRepository<Product>(context);
             var inventoryService = new InventoryService(productTestRepo);
@@ -72,7 +72,7 @@ namespace UnitTest
         {
             //Arrange
             //Initialize context
-            using InventoryDbContext context = new InventoryDbContext(_options);
+            using InventoryDBContext context = new InventoryDBContext(_options);
             //Intialize generic repo
             var productTestRepo = new EfRepository<Product>(context);
             var inventoryService = new InventoryService(productTestRepo);
@@ -91,7 +91,7 @@ namespace UnitTest
         {
             //Arrange
             //Initialize context
-            using InventoryDbContext context = new InventoryDbContext(_options);
+            using InventoryDBContext context = new InventoryDBContext(_options);
             //Intialize generic repo
             var productTestRepo = new EfRepository<Product>(context);
             var inventoryService = new InventoryService(productTestRepo);
@@ -110,7 +110,7 @@ namespace UnitTest
         public async Task Sell_Product_Change_Sold_Status_Async()
         {
             //Initialize context
-            using InventoryDbContext context = new InventoryDbContext(_options);
+            using InventoryDBContext context = new InventoryDBContext(_options);
             //Intialize generic repo
             var productTestRepo = new EfRepository<Product>(context);
             var inventoryService = new InventoryService(productTestRepo);
@@ -130,7 +130,7 @@ namespace UnitTest
         {
             //Arrange
             //Initialize context
-            using InventoryDbContext context = new InventoryDbContext(_options);
+            using InventoryDBContext context = new InventoryDBContext(_options);
             //Intialize generic repo
             var productTestRepo = new EfRepository<Product>(context);
             var inventoryService = new InventoryService(productTestRepo);
@@ -152,7 +152,7 @@ namespace UnitTest
         {
             //Arrange
             //Initialize context
-            using InventoryDbContext context = new InventoryDbContext(_options);
+            using InventoryDBContext context = new InventoryDBContext(_options);
             //Intialize generic repo
             var productTestRepo = new EfRepository<Product>(context);
 

@@ -20,18 +20,18 @@ namespace UnitTest
     }
     public static class RespositoryHelperTest
     {
-        public static DbContextOptions<InventoryDbContext> DbContextOptionsLocalDb()
+         public static DbContextOptions<InventoryDBContext> DbContextOptionsLocalDb()
         {
-            var options = new DbContextOptionsBuilder<InventoryDbContext>().
-             UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=InventoryDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;Integrated Security=SSPI;MultipleActiveResultSets=True;").Options;
+            var options = new DbContextOptionsBuilder<InventoryDBContext>().
+             UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=InventoryDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;Integrated Security=SSPI;MultipleActiveResultSets=True;").Options;
             return options;
         }
 
-        public static void CreateData(DbContextOptions<InventoryDbContext> options)
+        public static void CreateData(DbContextOptions<InventoryDBContext> options)
         {
 
 
-            using (var inventoryDbContext = new InventoryDbContext(options))
+            using (var inventoryDbContext = new InventoryDBContext(options))
             {
                 inventoryDbContext.Database.EnsureDeleted();
                 inventoryDbContext.Database.EnsureCreated();

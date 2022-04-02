@@ -36,7 +36,7 @@ namespace AssesmentAPI
                 c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Version = "v1", Title = "AssessmentAPI", Description = "Assesment Api" });
 
             });
-            services.AddDbContext<InventoryDbContext>(options =>
+            services.AddDbContext<InventoryDBContext>(options =>
                         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddAutoMapper(typeof(Startup));
