@@ -2,7 +2,7 @@
 
 Added local DB, Named InventoryDB, If unable to attach DB to local sql DB, 
 
-Just create add new database in SQL server explorer name InventoryDB, and execute create table script.sql
+Just create add new database in SQL server explorer in visual studio name InventoryDB, and execute create table script.sql
 
 In unit test project, Added initial data to local Db by reading JSON object, Created Mock Json for products using https://www.mockaroo.com/.
 
